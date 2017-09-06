@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="be6ba131-4bc7-476e-8cfe-35b3400967f3">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:$PROJECT_DIR$/resource\hibernate.cfg.xml</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="jdbc:hsqldb:file:D:/idea_workspace/demos/resource\hibernate.cfg.xml/" uuid="a1cee997-6f69-4de1-a97b-5df7982e0206">
+      <driver-ref>hsqldb.local</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/resource\hibernate.cfg.xml/</jdbc-url>
+    </data-source>
+  </component>
+</project>
