@@ -10,25 +10,32 @@ import java.io.Serializable;
  * Created by pxc on 2017/6/29.
  */
 
-@Setter
-@Getter
 public class TestEntity implements Serializable {
 
     private String name;
 
-    private Integer age;
+    private String age;
 
-    public TestEntity(String name, Integer age) {
+    public TestEntity(String name, String age) {
         this.name = name;
         this.age = age;
     }
 
-  /*  @Override
-    public boolean equals(Object obj) {
-        if((TestEntity) obj){
+    public String getName() {
+        return name;
+    }
 
-        }
-    }*/
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
 
     @Override
     public String toString() {

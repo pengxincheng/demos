@@ -1,6 +1,8 @@
 package hibernateDemo;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.search.annotations.*;
+import org.hibernate.search.annotations.Index;
 
 import javax.persistence.*;
 
@@ -10,11 +12,15 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "tab_order")
+@Indexed
 public class OrderEntity {
 
     private String id;
     private String orderSn;
     private String name;
+
+    @Field(index= Index.YES, analyze= Analyze.YES, store= Store.NO)
+    private String searchWord;
 
     @Id
     @Column(name = "id")
@@ -44,5 +50,14 @@ public class OrderEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Column(name = "search_word")
+    public String getSearchWord() {
+        return searchWord;
+    }
+
+    public void setSearchWord(String searchWord) {
+        this.searchWord = searchWord;
     }
 }

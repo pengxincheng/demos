@@ -12,7 +12,7 @@ import java.util.*;
 public class ArraySort {
     private static final String[] s1 = {"3", "5", "1", "2", "9", "8"};
     private static final String[] s2 = {"3q", "qwer", "5w", "v1", "2v", "9b", "8m"};
-    private static final TestEntity[] testEntities = {new TestEntity("李循环", 12),new TestEntity("张小刘", 12),  new TestEntity("红旗", 15)};
+    private static final TestEntity[] testEntities = {new TestEntity("李循环", "12"),new TestEntity("张小刘", "12"),  new TestEntity("红旗", "15")};
 
     @Test
     public void sortString() {

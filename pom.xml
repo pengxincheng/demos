@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <org.springframework.version>4.2.0.RELEASE</org.springframework.version>
         <aspectj.version>1.8.2</aspectj.version>
-        <org.hibernate.version>3.6.10.Final</org.hibernate.version>
+        <org.hibernate.version>5.2.11.Final</org.hibernate.version>
         <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
         <slf4j.version>1.7.7</slf4j.version>
         <logback.version>1.1.2</logback.version>
@@ -268,6 +268,18 @@
         </dependency>
         <!-- LOGGING end -->
 
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.26-incubating</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-search-orm -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-orm</artifactId>
+            <version>5.8.0.Final</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>mqDemo</finalName>
