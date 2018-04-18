@@ -21,12 +21,7 @@ public class ListSort {
 
     @Test
     public void  listSortByName(){
-        Collections.sort(testEntities, new Comparator<TestEntity>() {
-            @Override
-            public int compare(TestEntity o1, TestEntity o2) {
-                return o1.getName().compareTo(o2.getName());
-            }
-        });
+        Collections.sort(testEntities, (o1, o2) -> o1.getName().compareTo(o2.getName()));
 
         for (TestEntity testEntity:testEntities) {
             System.out.println(testEntity.toString());

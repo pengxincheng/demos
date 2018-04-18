@@ -133,4 +133,6 @@
     <!--<import resource="applicationContext-mq-producer.xml"/>
     <import resource="applicationContext-mq-consumer.xml"/>-->
 
+    <bean name="testController" id="testController" class="springLearn.TestController"></bean>
+
 </beans>

@@ -160,4 +160,23 @@ public class TestHibernate {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void insertUser(){
+        Configuration config = new Configuration();
+        config.addAnnotatedClass(UserEntity.class);      //采用注解时这里需要写
+
+        config.configure("hibernate.cfg.xml");
+        SessionFactory sf = config.buildSessionFactory();
+        Session session = sf.openSession();
+        Transaction tx = session.beginTransaction();
+        for(int i=0;i<500000;i++){
+            UserEntity userEntity = new UserEntity();
+            userEntity.setName("里"+Math.random());
+            userEntity.setAge((int)Math.random());
+            session.save(userEntity);
+
+        }
+        tx.commit();
+    }
 }
