@@ -17,6 +17,7 @@ public class ClassesEntity {
     private String name;
     private Set<StuEntity> stuEntities = new HashSet<>();
 
+    //
     @Id
     @Column(name = "id")
     @GeneratedValue(generator = "classesGenerator")
