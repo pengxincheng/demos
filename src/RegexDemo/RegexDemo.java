@@ -14,7 +14,7 @@ public class RegexDemo {
 
     @Test
     public void test1(){
-        String s = "dfgfdgfdg20000.96fgfdgfg";
+        String s = "3001/finance CenterApply";
         Pattern pattern = Pattern.compile("(\\d+(\\.\\d+)?)");
 
        Matcher matcher =  pattern.matcher(s);

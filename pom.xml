@@ -288,6 +288,14 @@
             <version>3.2.8</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <finalName>mqDemo</finalName>

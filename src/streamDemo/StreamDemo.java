@@ -20,7 +20,8 @@ public class StreamDemo {
 
     @Test
     public void test1() {
-        //IntStream.of(new int[]{1, 2, 3}).forEach(System.out::println);
+        int[] a = {34, 23, 2, 1, -4};
+        IntStream.of(a).forEach(System.out::println);
         //IntStream.range(1, 100).forEach(System.out::println);
         //IntStream.rangeClosed(1, 3).forEach(System.out::println);
         int s = IntStream.rangeClosed(1, 10).sum();
