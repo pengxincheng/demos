@@ -104,19 +104,19 @@
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:6.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant:1.10.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.10.3" level="project" />
-    <orderEntry type="library" name="Maven: net.sourceforge.tess4j:tess4j:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.tess4j:tess4j:3.5.0" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:4.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.jai-imageio:jai-imageio-core:1.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.ghost4j:ghost4j:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlgraphics:xmlgraphics-commons:1.4" level="project" />
     <orderEntry type="library" name="Maven: com.lowagie:itext:2.1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:2.0.9" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.pdfbox:fontbox:2.0.9" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox-tools:2.0.9" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox-debugger:2.0.9" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.pdfbox:jbig2-imageio:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: net.sourceforge.lept4j:lept4j:1.9.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:2.0.10" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:fontbox:2.0.10" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox-tools:2.0.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox-debugger:2.0.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:jbig2-imageio:3.0.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.lept4j:lept4j:1.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.jboss:jboss-vfs:3.2.12.Final" level="project" />
   </component>
 </module>

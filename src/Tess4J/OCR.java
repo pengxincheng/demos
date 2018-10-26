@@ -1,6 +1,7 @@
 package Tess4J;
 
 import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.util.ImageHelper;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -25,9 +26,12 @@ public class OCR {
             if (!imageFile.exists()) {
                 return "图片不存在";
             }
+
+
             BufferedImage textImage = ImageIO.read(imageFile);
+
             Tesseract instance = new Tesseract();
-            instance.setDatapath("C:\\Program Files (x86)\\Tesseract-OCR\\tessdata");//设置训练库
+            instance.setDatapath("D:\\testOcr\\tessdata");//设置训练库
             instance.setLanguage(language);
 
             String result = null;
@@ -41,17 +45,17 @@ public class OCR {
         }
     }
 
-    public static void main(String[] args) throws Exception {
-        String result = FindOCR("D:\\testOcr\\test2.png", "normal");
+    public static void main(String[] args){
+     /*   String result = FindOCR("D:\\testOcr\\test11.png", "normal");
         System.out.println(result);
 
-        String result2 = FindOCR("D:\\testOcr\\test1.png", "chi_sim");
+        String result2 = FindOCR("D:\\testOcr\\test1.png", "normal");
         System.out.println(result2);
 
         String result3 = FindOCR("D:\\testOcr\\test3.png", "normal");
-        System.out.println(result3);
+        System.out.println(result3);*/
 
-        String result4 = FindOCR("D:\\testOcr\\test6.png", "eng");
+        String result4 = FindOCR("D:\\testOcr\\test10.png", "amt");
         System.out.println(result4);
     }
 }
