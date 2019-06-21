@@ -5,6 +5,7 @@ import org.hibernate.search.annotations.*;
 import org.hibernate.search.annotations.Index;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by pxc on 2017/8/21.
@@ -18,6 +19,7 @@ public class OrderEntity {
     private String id;
     private String orderSn;
     private String name;
+    private Date orderTime;
 
     @Field(index= Index.YES, analyze= Analyze.YES, store= Store.NO)
     private String searchWord;
@@ -59,5 +61,14 @@ public class OrderEntity {
 
     public void setSearchWord(String searchWord) {
         this.searchWord = searchWord;
+    }
+
+    @Column(name = "order_time")
+    public Date getOrderTime() {
+        return orderTime;
+    }
+
+    public void setOrderTime(Date orderTime) {
+        this.orderTime = orderTime;
     }
 }

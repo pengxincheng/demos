@@ -12,6 +12,7 @@ import org.hibernate.search.query.dsl.QueryBuilder;
 import org.junit.Test;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -178,5 +179,34 @@ public class TestHibernate {
 
         }
         tx.commit();
+    }
+
+    @Test
+    public void testInsertOrder(){
+        for (int i = 0; i <1000 ; i++) {
+            OrderEntity orderEntity = new OrderEntity();
+            orderEntity.setName("sss");
+
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(new Date());
+            calendar.set(Calendar.HOUR_OF_DAY, 23);
+            calendar.set(Calendar.MINUTE, 59);
+            calendar.set(Calendar.SECOND, 59);
+            // calendar.set(Calendar.MILLISECOND,499);
+
+            orderEntity.setOrderTime(calendar.getTime());
+
+
+            Configuration config = new Configuration();
+            config.addAnnotatedClass(OrderEntity.class);
+            config.configure("hibernate.cfg.xml");
+            SessionFactory sf = config.buildSessionFactory();
+            Session session = sf.openSession();
+            Transaction tx = session.beginTransaction();
+
+            session.save(orderEntity);
+
+            tx.commit();
+        }
     }
 }
