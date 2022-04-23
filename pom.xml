@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <org.springframework.version>4.2.0.RELEASE</org.springframework.version>
+        <org.springframework.version>5.3.19</org.springframework.version>
         <aspectj.version>1.8.2</aspectj.version>
         <org.hibernate.version>5.2.11.Final</org.hibernate.version>
         <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
